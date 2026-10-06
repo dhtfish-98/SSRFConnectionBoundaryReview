@@ -1,0 +1,102 @@
+{
+  "schema": "ssrf-connection-boundary-review-source-manifest-v2",
+  "project": "SSRFConnectionBoundaryReview",
+  "version": "0.1.0",
+  "author": "dhtfish98",
+  "scope": "Self-owned source, tests, workflow, build metadata and documents; cited guidance and external build tools keep their original rights",
+  "captured_at_utc": "2026-10-06T05:19:22.771811+00:00",
+  "files": [
+    {
+      "path": ".github/workflows/verify.yml",
+      "sha256": "abe6daf55eeb835a4ec0413ba90c77a7c5b5cea8b1c0501a87345c418428664f",
+      "bytes": 1478
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "8d464195927f582a667117a0b2bc07922381283822592f8f3912ec97540cf247",
+      "bytes": 91
+    },
+    {
+      "path": "MANIFEST.in",
+      "sha256": "3af29cb311d52273095e65394bd0285795f577db82c833f23c67dc0d19279f9b",
+      "bytes": 359
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "1a2f1f697aa6a4efa1874cfbe8654b62c56de06c48658c98a0ad167797bdd7de",
+      "bytes": 991
+    },
+    {
+      "path": "scripts/run_validation.py",
+      "sha256": "d63128556456823bdbbd23baa87ee8bf8257ccdb50e805e0cbdbfb47e33f30f0",
+      "bytes": 14831
+    },
+    {
+      "path": "src/ssrf_connection_boundary_review/__init__.py",
+      "sha256": "76ccb527ee30956a3c46cf5b43befdcf1435542586565e78b2f493860720c120",
+      "bytes": 464
+    },
+    {
+      "path": "src/ssrf_connection_boundary_review/core.py",
+      "sha256": "e63ad4539db04984ef2d51238fa36ac8620165b14168ccf39ffb267ed15cee99",
+      "bytes": 15743
+    },
+    {
+      "path": "src/ssrf_connection_boundary_review/dns_lab.py",
+      "sha256": "249801a12176bfeef8c028bb0eed02c82693e51947ffdb995d8428d6ac1f5331",
+      "bytes": 8635
+    },
+    {
+      "path": "src/ssrf_connection_boundary_review/experiment.py",
+      "sha256": "880833ef6755dd6866132e381bbb527e400a65fffbdf23c9776b2642de24f899",
+      "bytes": 6945
+    },
+    {
+      "path": "src/ssrf_connection_boundary_review/lab.py",
+      "sha256": "b269253dee5c7c83cce025511503d2f01098fff4312d571cb00c8bf9305b7f38",
+      "bytes": 5449
+    },
+    {
+      "path": "tests/test_boundaries.py",
+      "sha256": "94caddf33aa0f32e7c197fbac9e88c87a50b90a9bee11d509cc55c9becca4ac0",
+      "bytes": 9191
+    },
+    {
+      "path": "项目文档/DESIGN.md",
+      "sha256": "f8ace1790d9e476eb53757f8f20cbfd7d90aed042016bd9a4fea58a544e84eba",
+      "bytes": 4395
+    },
+    {
+      "path": "项目文档/LICENSE",
+      "sha256": "de926d6c22d9e061af6158b0f23146ce036bfb2a562f2f406acec2dc4bd8b298",
+      "bytes": 1066
+    },
+    {
+      "path": "项目文档/NOTICE.md",
+      "sha256": "6d1cba22f093d1fa1c2e1918cb2ac3392ff5925e01bed4efb17e9b6cea680127",
+      "bytes": 750
+    },
+    {
+      "path": "项目文档/ORIGIN.md",
+      "sha256": "f738f2e4108ba56e3f08ce4b8f23d096da7f147646761e264c8267d3aff0ec10",
+      "bytes": 1400
+    },
+    {
+      "path": "项目文档/README.md",
+      "sha256": "b4a1bb4e53437150c5e2ff15139e2a1e420c0c8623c131b07227532244d05c5a",
+      "bytes": 2844
+    },
+    {
+      "path": "项目文档/VALIDATION.md",
+      "sha256": "a9c580ad87f9a6c317c28958d4b65773091c74a33c5aa2c445eba711445ddfa3",
+      "bytes": 2242
+    },
+    {
+      "path": "项目文档/VERSION_STATUS.md",
+      "sha256": "649f8b322031c234c4358ea4ae64a825744e71cf9cfa6cba92756e30623c1ff2",
+      "bytes": 806
+    }
+  ],
+  "upstream_vulnerability_claim": false,
+  "cvp_qualification": "OPEN"
+}

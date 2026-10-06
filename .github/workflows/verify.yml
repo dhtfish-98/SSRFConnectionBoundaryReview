@@ -1,0 +1,42 @@
+name: Verify SSRF connection boundary
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: verify (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.14"]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: false
+      - name: Validate source, sdist and installed wheel
+        run: python3 scripts/run_validation.py --build-root "${{ runner.temp }}/Build/验证/SSRFConnectionBoundaryReview"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ssrf-boundary-python-${{ matrix.python-version }}
+          path: |
+            ${{ runner.temp }}/Build/验证/SSRFConnectionBoundaryReview/validation.json
+            ${{ runner.temp }}/Build/验证/SSRFConnectionBoundaryReview/SHA256SUMS
+            ${{ runner.temp }}/Build/验证/SSRFConnectionBoundaryReview/logs/
+            ${{ runner.temp }}/Build/验证/SSRFConnectionBoundaryReview/source_experiment.json
+            ${{ runner.temp }}/Build/验证/SSRFConnectionBoundaryReview/wheel_experiment.json
+            ${{ runner.temp }}/Build/验证/SSRFConnectionBoundaryReview/dist/
+          if-no-files-found: warn

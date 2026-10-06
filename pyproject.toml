@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools==84.0.0", "wheel==0.48.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ssrf-connection-boundary-review"
+version = "0.1.0"
+description = "Loopback-only laboratory for SSRF DNS, redirect, retry and connected-peer boundaries"
+readme = {file = "项目文档/README.md", content-type = "text/markdown"}
+requires-python = ">=3.11"
+authors = [{name = "dhtfish98"}]
+maintainers = [{name = "dhtfish98"}]
+license = "MIT"
+license-files = ["项目文档/LICENSE"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Security",
+]
+
+[project.scripts]
+ssrf-boundary-lab = "ssrf_connection_boundary_review.experiment:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,11 @@
+include .gitignore
+include .github/workflows/verify.yml
+include scripts/run_validation.py
+include 项目文档/README.md
+include 项目文档/LICENSE
+include 项目文档/NOTICE.md
+include 项目文档/ORIGIN.md
+include 项目文档/DESIGN.md
+include 项目文档/VALIDATION.md
+include 项目文档/VERSION_STATUS.md
+include 项目文档/SOURCE_MANIFEST.json
