@@ -4,12 +4,12 @@
   "version": "0.1.0",
   "author": "dhtfish98",
   "scope": "Self-owned source, tests, workflow, build metadata and documents; cited guidance and external build tools keep their original rights",
-  "captured_at_utc": "2026-10-06T05:19:22.771811+00:00",
+  "captured_at_utc": "2026-10-06T05:26:50.309574+00:00",
   "files": [
     {
       "path": ".github/workflows/verify.yml",
-      "sha256": "abe6daf55eeb835a4ec0413ba90c77a7c5b5cea8b1c0501a87345c418428664f",
-      "bytes": 1478
+      "sha256": "47de58675ebeaf9fc50640966fa570d546420d4ecaa7bd840a5b97fb4cd00558",
+      "bytes": 1455
     },
     {
       "path": ".gitignore",
